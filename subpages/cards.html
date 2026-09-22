@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cards | Cathy Ly</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link href="../css/bootstrap/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/custom.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top navbar-custom">
+    <div class="container-lg">
+      <a class="navbar-brand" href="../index.html">Cathy Ly</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMain">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cards.html" aria-current="page">Cards</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="approach.html">Our Approach</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="gridDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Grid Challenges
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="gridDropdown">
+              <li><a class="dropdown-item" href="../gridChallenges/grid-challenge-1.html">Grid Challenge 1</a></li>
+              <li><a class="dropdown-item" href="../gridChallenges/grid-challenge-2.html">Grid Challenge 2</a></li>
+              <li><a class="dropdown-item" href="../gridChallenges/grid-challenge-3.html">Grid Challenge 3</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container-lg page-container">
+    <div class="row">
+      <div class="col-12 col-lg-8">
+        <h1>Three ways the work shows up</h1>
+        <p>Consent forms are not signed. The build has no save state. Using the usability heuristic to flag friction? We are debriefing three maker-space cohorts for the workshop redesign prompted by inconsistent completion rates. Interviews have surfaced unusual patterns of hesitation in every skill tier. Assemble the findings. Look at records of the clinician shadowing. Would these signals detect confusion as well as boredom?</p>
+      </div>
+    </div>
+
+    <div class="row g-4 mt-2">
+      <div class="col-lg-4 col-12">
+        <div class="card theme-card h-100">
+          <img src="../images/Screenshot 2026-09-21 234847.png" class="card-img-top" alt="Illustration representing a digital media maker space workshop">
+          <div class="card-body d-flex flex-column">
+            <h3 class="card-title h5">Maker Space Sessions</h3>
+            <p class="card-text">Daily workshops with 25&ndash;50 middle schoolers, built around hands-on builds instead of worksheets.</p>
+            <a href="#" class="btn btn-theme mt-auto">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-12">
+        <div class="card theme-card h-100">
+          <img src="../images/1727304520225.jpg" class="card-img-top" alt="Illustration representing clinician interviews for a therapeutic game platform">
+          <div class="card-body d-flex flex-column">
+            <h3 class="card-title h5">Clinician Interviews</h3>
+            <p class="card-text">Talking to therapists about what a game-based motor-skills intervention actually needs to do.</p>
+            <button type="button" class="btn btn-theme mt-auto" data-bs-toggle="modal" data-bs-target="#learnMoreModal">
+              Modal
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-12">
+        <div class="card theme-card h-100">
+          <img src="../images/1727304520491.jpg" class="card-img-top" alt="Illustration representing a published UX research paper">
+          <div class="card-body d-flex flex-column">
+            <h3 class="card-title h5">Research Write-ups</h3>
+            <p class="card-text">Turning session notes and usability passes into findings worth presenting and publishing.</p>
+            <a href="#" class="btn btn-theme mt-auto">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Modal -->
+  <div class="modal fade" id="learnMoreModal" tabindex="-1" aria-labelledby="learnMoreModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header" style="background-color: var(--teal); color: #fff;">
+          <h5 class="modal-title" id="learnMoreModalLabel">Inside a clinician interview</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <img src="https://placehold.co/600x300/0f7173/ffffff?text=Session+Notes" class="w-100" alt="Illustration representing session notes from a clinician interview">
+        <div class="modal-body">
+          <p>Before a single line of a game gets built, occupational and physical therapists walk through what "progress" looks like for a child working on motor skills &mdash; what a good rep looks like, what fatigue looks like, and where a game could get in the way instead of helping.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-theme" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <p class="mb-0">&copy; 2026 Cathy Ly. All rights reserved.</p>
+  </footer>
+
+  <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
