@@ -1,0 +1,151 @@
+/* ==========================================================================
+   Cathy Ly — Bootstrap Tutorial custom styles
+   Theme: game-based learning & UX research ("Playful Learning Lab")
+   ========================================================================== */
+
+:root {
+  --ink: #202136;
+  --paper: #ffffff;
+  --teal: #0f7173;
+  --teal-dark: #0b5457;
+  --amber: #e8a33d;
+  --rose: #d6537b;
+  --mist: #6b7280;
+  --nav-link: #9c99b3;
+}
+
+body {
+  font-family: "Sora", sans-serif;
+  color: var(--ink);
+  background-color: var(--paper);
+}
+
+h1, h2, h3, .navbar-brand {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+p {
+  color: var(--mist);
+  line-height: 1.7;
+}
+
+/* ---------- Navigation ---------- */
+.navbar-custom {
+  background-color: var(--ink);
+}
+
+.navbar-custom .navbar-brand {
+  color: #ffffff;
+}
+
+.navbar-custom .nav-link {
+  color: var(--nav-link);
+  font-weight: 600;
+  transition: color 0.15s ease;
+}
+
+.navbar-custom .nav-link:hover,
+.navbar-custom .nav-link:focus {
+  color: #ffffff;
+}
+
+.navbar-custom .nav-link[aria-current="page"] {
+  color: #ffffff;
+  border-bottom: 2px solid var(--amber);
+}
+
+.navbar-custom .dropdown-menu {
+  background-color: var(--ink);
+  border: 1px solid #3a3a55;
+}
+
+.navbar-custom .dropdown-item {
+  color: var(--nav-link);
+}
+
+.navbar-custom .dropdown-item:hover,
+.navbar-custom .dropdown-item:focus {
+  background-color: #2c2d4a;
+  color: #ffffff;
+}
+
+.navbar-toggler {
+  border-color: var(--nav-link);
+}
+
+/* ---------- Page layout ---------- */
+.page-container {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+/* ---------- Footer ---------- */
+footer.site-footer {
+  background-color: var(--ink);
+  color: var(--nav-link);
+  border-top: 4px solid var(--amber);
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
+footer.site-footer a {
+  color: #ffffff;
+}
+
+/* ---------- Buttons ---------- */
+.btn-theme {
+  background-color: var(--teal);
+  border-color: var(--teal);
+  color: #ffffff;
+  font-weight: 600;
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.btn-theme:hover,
+.btn-theme:focus {
+  background-color: var(--amber);
+  border-color: var(--amber);
+  color: var(--ink);
+}
+
+/* ---------- Cards ---------- */
+.theme-card {
+  border: none;
+  box-shadow: 0 1px 3px rgba(32, 33, 54, 0.12);
+}
+
+.theme-card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.theme-card .card-title {
+  font-weight: 700;
+}
+
+/* ---------- Accordion (page 3) ---------- */
+.accordion-button:not(.collapsed) {
+  background-color: var(--teal);
+  color: #ffffff;
+}
+
+.accordion-button:focus {
+  box-shadow: 0 0 0 0.2rem rgba(15, 113, 115, 0.35);
+}
+
+/* ---------- Grid challenge columns ---------- */
+.grid-col {
+  color: #ffffff;
+  font-weight: 600;
+  text-align: center;
+}
+
+.grid-col-a { background-color: var(--teal); }
+.grid-col-b { background-color: var(--amber); color: var(--ink); }
+.grid-col-c { background-color: var(--rose); }
+
+/* ---------- Two-column intro text (index) ---------- */
+.intro-col {
+  max-width: 60ch;
+}
