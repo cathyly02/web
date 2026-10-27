@@ -1,0 +1,113 @@
+/* Cathy Ly logo page */
+:root {
+  --raspberry: #C2185B;
+  --raspberry-dark: #9C1349;
+  --charcoal: #2B2B2B;
+  --page-bg: #FBF7F8;
+  --alt-bg: #F4ECEF;
+  --text: #2B2B2B;
+  --card-bg: #FFFFFF;
+}
+
+[data-bs-theme="dark"] {
+  --page-bg: #1C1A1B;
+  --alt-bg: #252224;
+  --text: #F2EEF0;
+  --card-bg: #2E2B2D;
+  --raspberry: #E8578F; /* lighter raspberry so it passes contrast on dark */
+}
+
+body {
+  font-family: "Nunito", system-ui, sans-serif;
+  background: var(--page-bg);
+  color: var(--text);
+  transition: background .2s, color .2s;
+}
+
+h1, h2, h3, .navbar-brand, .font-display {
+  font-family: "Happy Monkey", "Nunito", sans-serif;
+}
+
+h1, h2 { color: var(--raspberry); }
+
+/* Nav */
+.site-nav {
+  background: var(--page-bg);
+  border-bottom: 3px solid var(--raspberry);
+}
+.site-nav .nav-link { color: var(--text); }
+.site-nav .nav-link:hover { color: var(--raspberry); }
+
+.btn-raspberry-outline {
+  color: var(--raspberry);
+  border: 2px solid var(--raspberry);
+  border-radius: 999px;
+}
+.btn-raspberry-outline:hover {
+  background: var(--raspberry);
+  color: #fff;
+}
+
+/* Hero */
+.hero-logo { max-width: 460px; width: 100%; }
+.logo-dark-only { display: none; }
+[data-bs-theme="dark"] .logo-light-only { display: none; }
+[data-bs-theme="dark"] .logo-dark-only { display: inline-block; }
+
+.section-alt { background: var(--alt-bg); }
+
+/* Cards */
+.card {
+  background: var(--card-bg);
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,.06);
+  color: var(--text);
+}
+
+.logo-stage {
+  min-height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  border-radius: 1rem 1rem 0 0;
+}
+.logo-stage img { max-height: 180px; }
+.stage-white { background: #FFFFFF; }
+.stage-dark  { background: #2B2B2B; }
+
+.stage-split { padding: 0; overflow: hidden; }
+.fav-wrap {
+  flex: 1;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fav-light { background: #F1F3F4; } /* light browser tab */
+.fav-dark  { background: #35363A; } /* dark browser tab */
+
+/* Usage */
+.clearspace-demo {
+  border: 2px dashed var(--raspberry);
+  padding: 1.25rem;
+  background: #fff;
+  border-radius: .5rem;
+}
+
+.dodont li { padding: .3rem 0 .3rem 1.75rem; position: relative; }
+.dodont li::before { position: absolute; left: 0; font-weight: 700; }
+.dodont .do::before   { content: "✓"; color: #2E7D32; }
+.dodont .dont::before { content: "✕"; color: var(--raspberry); }
+
+/* Colors */
+.swatch {
+  height: 90px;
+  border-radius: .75rem;
+}
+
+/* Footer */
+.site-footer {
+  border-top: 3px solid var(--raspberry);
+}
