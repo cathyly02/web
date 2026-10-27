@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cathy Ly | Logo System</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav class="navbar navbar-expand-md sticky-top site-nav">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <img src="images/favicon.svg" alt="" width="32" height="32" class="rounded">
+        <span>Cathy Ly</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-md-center">
+          <li class="nav-item"><a class="nav-link" href="#versions">Versions</a></li>
+          <li class="nav-item"><a class="nav-link" href="#usage">Usage</a></li>
+          <li class="nav-item"><a class="nav-link" href="#colors">Colors</a></li>
+          <li class="nav-item ms-md-2">
+            <button id="themeToggle" class="btn btn-sm btn-raspberry-outline" type="button" aria-pressed="false">
+              Dark mode
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="py-5">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 text-center">
+          <img src="images/logo-color.svg" alt="Cathy Ly logo: a one-line lop-eared rabbit holding the name Cathy Ly" class="img-fluid hero-logo logo-light-only">
+          <img src="images/logo-reverse.svg" alt="Cathy Ly logo in white" class="img-fluid hero-logo logo-dark-only">
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 mb-3">One line, one bunny.</h1>
+          <p class="lead">
+            Rabbits have always been my thing, so I wanted my logo to feel like me: soft, a little playful, and approachable.
+            The rabbit is drawn in a single continuous line, and its long, floppy ear wraps around my name like it's giving it a hug.
+          </p>
+          <p>
+            I paired the line with Happy Monkey, a rounded typeface whose stroke weight matches the drawing, so the illustration and the
+            wordmark read as one piece. The raspberry accent is bold enough to hold up at small sizes while still feeling warm.
+          </p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Versions -->
+  <section id="versions" class="py-5 section-alt">
+    <div class="container">
+      <h2 class="text-center mb-5">Logo Versions</h2>
+      <div class="row g-4">
+
+        <div class="col-md-6">
+          <div class="card h-100 logo-card">
+            <div class="logo-stage stage-white">
+              <img src="images/logo-black.svg" alt="Black and white Cathy Ly logo" class="img-fluid">
+            </div>
+            <div class="card-body">
+              <h3 class="h5">Black &amp; White</h3>
+              <p class="mb-0">The primary one-color version. Use it for print, documents, and anywhere color isn't available.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card h-100 logo-card">
+            <div class="logo-stage stage-white">
+              <img src="images/logo-color.svg" alt="Color Cathy Ly logo with a raspberry rabbit" class="img-fluid">
+            </div>
+            <div class="card-body">
+              <h3 class="h5">Color</h3>
+              <p class="mb-0">The main version for my portfolio and the web. The rabbit is raspberry and the name stays charcoal so it's easy to read.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card h-100 logo-card">
+            <div class="logo-stage stage-dark">
+              <img src="images/logo-reverse.svg" alt="Reverse white Cathy Ly logo on charcoal" class="img-fluid">
+            </div>
+            <div class="card-body">
+              <h3 class="h5">Reverse</h3>
+              <p class="mb-0">White on dark. Use it for dark mode, dark photos, and dark backgrounds.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card h-100 logo-card">
+            <div class="logo-stage stage-split">
+              <div class="fav-wrap fav-light"><img src="images/favicon.svg" alt="Favicon on a light browser tab" width="64" height="64"></div>
+              <div class="fav-wrap fav-dark"><img src="images/favicon.svg" alt="Favicon on a dark browser tab" width="64" height="64"></div>
+            </div>
+            <div class="card-body">
+              <h3 class="h5">Favicon</h3>
+              <p class="mb-0">Only the rabbit, cropped so it peeks into the frame. The name is dropped because it can't be read at tab size. The white rounded tile keeps it visible on both light and dark tabs.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Usage -->
+  <section id="usage" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Usage &amp; Sizing</h2>
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="card h-100 p-4">
+            <h3 class="h5">Sizes</h3>
+            <ul class="mb-0">
+              <li><strong>Full logo minimum:</strong> 160px wide (digital) / 1.25in (print)</li>
+              <li><strong>Nav bar:</strong> 160–200px wide</li>
+              <li><strong>Hero / cover:</strong> 400px+ wide</li>
+              <li><strong>Favicon:</strong> 16, 32, and 64px</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card h-100 p-4">
+            <h3 class="h5">Clear Space</h3>
+            <p>Leave empty space around the logo equal to the <strong>height of the "C"</strong> in "Cathy" on every side.</p>
+            <div class="clearspace-demo">
+              <img src="images/logo-black.svg" alt="Logo shown with clear space boundary" class="img-fluid">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card h-100 p-4">
+            <h3 class="h5">Do &amp; Don't</h3>
+            <ul class="list-unstyled mb-0 dodont">
+              <li class="do">Use the reverse version on dark backgrounds</li>
+              <li class="do">Scale proportionally</li>
+              <li class="dont">Stretch, skew, or rotate the logo</li>
+              <li class="dont">Recolor it outside the brand palette</li>
+              <li class="dont">Put the color version on busy photos</li>
+              <li class="dont">Use the full logo below 160px; use the favicon mark instead</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Colors -->
+  <section id="colors" class="py-5 section-alt">
+    <div class="container">
+      <h2 class="text-center mb-5">Colors</h2>
+      <div class="row g-4 justify-content-center">
+        <div class="col-6 col-md-3">
+          <div class="swatch" style="background:#C2185B"></div>
+          <p class="mt-2 mb-0"><strong>Raspberry</strong><br>#C2185B</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="swatch" style="background:#2B2B2B"></div>
+          <p class="mt-2 mb-0"><strong>Charcoal</strong><br>#2B2B2B</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="swatch" style="background:#000000"></div>
+          <p class="mt-2 mb-0"><strong>Black</strong><br>#000000</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="swatch border" style="background:#FFFFFF"></div>
+          <p class="mt-2 mb-0"><strong>White</strong><br>#FFFFFF</p>
+        </div>
+      </div>
+      <p class="text-center mt-4 mb-0 small">Typeface: <span class="font-display">Happy Monkey</span> (Google Fonts)</p>
+    </div>
+  </section>
+
+  <footer class="py-4 text-center site-footer">
+    <small>&copy; 2026 Cathy Ly</small>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Light/dark toggle. Starts from the visitor's system setting.
+    const root = document.documentElement;
+    const btn = document.getElementById('themeToggle');
+    function setTheme(t) {
+      root.setAttribute('data-bs-theme', t);
+      btn.textContent = t === 'dark' ? 'Light mode' : 'Dark mode';
+      btn.setAttribute('aria-pressed', t === 'dark');
+    }
+    setTheme(window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    btn.addEventListener('click', () => setTheme(root.getAttribute('data-bs-theme') === 'dark' ? 'light' : 'dark'));
+  </script>
+</body>
+</html>
